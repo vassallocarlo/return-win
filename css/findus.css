@@ -1,0 +1,11 @@
+#findus #map{
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+#findus p{
+    background-color: rgb(45, 46, 48);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}

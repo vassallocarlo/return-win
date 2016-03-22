@@ -1,0 +1,170 @@
+/*  DEFAULT  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: consolas;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #1d1f21;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*  KEYWORD COLOR  */
+.keyword{ color: #357ef8; }
+
+.properties{ color: #957fcf; }
+
+.string{ color: #d87624; }
+
+.comment{ color: #767676; }
+
+.value{ color: #85a309; }
+
+.cursor::after{
+    content: '|';
+    animation: cursor ease-in-out 500ms infinite alternate both;
+}
+.bash-cursor::after{
+    content: '_';
+    animation: cursor ease-in-out 500ms infinite alternate both;
+}
+
+/*  CODE LINE  */
+.code-line-1,
+.code-line-2,
+.code-line-3,
+.code-line-4,
+.code-line-5,
+.code-line-6,
+.code-line-7,
+.code-line-8{
+    position: relative;
+    display: block;
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 1.3em;
+    padding-left: 50px;
+}
+
+.code-line-1::before{
+    content: '1';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-2::before{
+    content: '2';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-3::before{
+    content: '3';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-4::before{
+    content: '4';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-5::before{
+    content: '5';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-6::before{
+    content: '6';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-7::before{
+    content: '7';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-8::before{
+    content: '8';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+
+/*  INPUT  */
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="text"]:hover{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font: inherit;
+    width: 10px;
+}
+
+/*  SCROLLBAR  */
+/*  internet explorer  */
+*{
+    scrollbar-base-color: rgb(49,49,49);
+    scrollbar-base-color: rgb(49,49,49);
+    scrollbar-3dlight-color: rgb(49,49,49);
+    scrollbar-highlight-color: rgb(49,49,49);
+    scrollbar-track-color: rgb(15,15,15);
+    scrollbar-arrow-color: rgb(49,49,49);
+    scrollbar-shadow-color: rgb(49,49,49);
+    scrollbar-dark-shadow-color: rgb(49,49,49);
+}
+
+/* webkit based browser */
+::-webkit-scrollbar { width: 10px; height: 5px; }
+::-webkit-scrollbar-track {background-color: rgb(15,15,15);}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:window-inactive {background-color: rgb(49,49,49);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

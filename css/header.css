@@ -1,0 +1,72 @@
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: right;
+    background-color: rgb(60, 63, 65);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.header .header-logo{
+    float: left;
+    font-size: 1.3em;
+    transform: rotate(-7deg);
+}
+
+
+@media (max-width: 769px) {
+    .header{
+        text-align: center;
+        overflow-y: hidden;
+    }
+    
+    .header a{
+        margin: 0px 5px;
+    }
+    
+    .header .header-logo{
+        display: none;
+    }
+}
+
+@media (max-width: 659px) {
+    .header{
+        overflow-x: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
