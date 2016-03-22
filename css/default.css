@@ -4,7 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     color: white;
-    font-family: consolas;
+    font-family: Consolas, monaco, monospace;
 }
 
 html,body{
@@ -37,7 +37,38 @@ a{
     animation: cursor ease-in-out 500ms infinite alternate both;
 }
 
-/*  CODE LINE  */
+/*  CODE & BASH LINE  */
+.bash-line-window-bar{
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: right;
+    padding: 0px 5px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.bash-line{
+    position: relative;
+    display: block;
+    min-height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding-left: 5px;
+    background-color: rgb(42, 42, 42);
+    overflow: hidden;
+}
+a.bash-line:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.bash-line::before{
+    content: '[root@us]>';
+    color: #767676;
+}
+
 .code-line-1,
 .code-line-2,
 .code-line-3,
@@ -45,14 +76,17 @@ a{
 .code-line-5,
 .code-line-6,
 .code-line-7,
-.code-line-8{
+.code-line-8,
+.code-line-9,
+.code-line-10,
+.code-line-11,
+.code-line-12{
     position: relative;
     display: block;
-    min-height: 50px;
-    line-height: 50px;
+    min-height: 30px;
+    line-height: 30px;
     vertical-align: middle;
-    font-size: 1.3em;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .code-line-1::before{
@@ -111,6 +145,41 @@ a{
     left: 10px;
     color: gray;
 }
+.code-line-9::before{
+    content: '9';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-10::before{
+    content: '10';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-11::before{
+    content: '11';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+.code-line-12::before{
+    content: '12';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: gray;
+}
+
+.code-tab{
+    display: block;
+    width: 50px;
+    height: 5px;
+    float: left;
+}
 
 /*  INPUT  */
 input[type="text"],
@@ -144,8 +213,23 @@ input[type="text"]:hover{
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:window-inactive {background-color: rgb(49,49,49);}
 
+/*  TYPOGRAPHY   */
 
+h1{
+    font-size: 3.9em;
+    font-weight: 100;
+}
+h3{ font-size: 1.5em; }
 
+@media (max-width: 480px) {
+    h1{ font-size: 2.3em; }
+    h3{ font-size: 1em; }
+}
+
+/*   RESPONSIVE UTILITIES   */
+@media (max-width: 480px) {
+    .hide-mobile{ display: none; }
+}
 
 
 
