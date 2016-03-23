@@ -30,8 +30,11 @@
 
 @media (max-width: 442px){
     #team .team-component{
+        width: 50%;
+        height: 110px;
+    }
+    #team .team-component-double{
         width: 100%;
-        height: 221px;
     }
 }
 

@@ -1,1 +1,9 @@
+#mailus .window-bar .mailus-content{
+    padding: 15px;
+}
+
+#mailus .window-bar .mailus-content #mailus-form .mailus-message{
+    display: none;
+}
+
 

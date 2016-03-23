@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width"> 
         <title>return win();</title>
+        <link rel="shortcut icon" href="asset/img/favicons.ico">
         <link type="text/css" rel="stylesheet" href="libs/ionicons.min.css">
         <link type="text/css" rel="stylesheet" href="style.css">
     </head>
@@ -33,58 +34,43 @@
             <div class="team-component">b</div>
             <div class="team-component team-component-double">proff</div>
         </div>
-        <div id="photo" class="content content-100">photo</div>
-        <div id="video" class="content content-100">video</div>
+        <div id="photo" class="content">
+            <img src="asset/img/photo.jpg" style="height:100%; width:100%">
+            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
+        </div>
+        <div id="video" class="content">
+            <img src="asset/img/video.jpg" style="height:100%; width:100%">
+            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
+        </div>
         <div id="findus" class="content content-100">
             <!-- NOTE: non funziona zio bhe !-->
             <div id="map"></div>
-            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);
-            </p>
+            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
         </div>
         <div id="mailus" class="content">
-
+            <div class="window-bar">
+                <div class="mailus-content">
+                    <h3>Mail us</h3>
+                    <form id="mailus-form">
+                        <input placeholder="Your email" type="email">
+                        <input placeholder="Email object" type="text">
+                        <textarea placeholder="Email body"></textarea>
+                        <p class="mailus-message">Mail sended!</p>
+                        <input type="submit" value="mail us">
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="footer" class="content">
-            <div class="footer-col">
-                <div class=" bash-line-window-bar">- x</div>
-                <img src="asset/img/nao-challene.jpg">
-            </div>
-            <div class="footer-col">
-                <div class=" bash-line-window-bar">- x</div>
-                <p class="bash-line bash"></p>
-                <p class="bash-line bash"></p>
-                <p class="bash-line bash"> cat links</p>
-                <a class="bash-line " href="#team"> -> team</a>
-                <a class="bash-line" href="#photo"> -> photo</a>
-                <a class="bash-line" href="#video"> -> video</a>
-                <a class="bash-line" href="#findus"> -> find_us</a>
-                <a class="bash-line" href="#mailus"> -> mail_us</a>
-                <p class="bash-line bash"> <span class="bash-cursor"></span></p>
-            </div>
-            <a href="#team" class="footer-col">
-                <p class="code-line-1"><span class="keyword">var</span> team = [</p>
-                <p class="code-line-2"><span class="code-tab"></span><span class="string">"Carlo Vassallo"</span>,</p>
-                <p class="code-line-3"><span class="code-tab"></span><span class="string">"kristian Notari"</span>,</p>
-                <p class="code-line-4"><span class="code-tab"></span><span class="string">"Matteo Niscosi"</span>,</p>
-                <p class="code-line-5"><span class="code-tab"></span><span class="string">"Kumanaku Francesco"</span>,</p>
-                <p class="code-line-6"><span class="code-tab"></span><span class="string">"Matteo Palmerini"</span>,</p>
-                <p class="code-line-8"><span class="code-tab"></span><span class="string">"tipo1"</span>,</p>
-                <p class="code-line-9"><span class="code-tab"></span><span class="string">"tipo2"</span>,</p>
-                <p class="code-line-10"><span class="code-tab"></span><span class="string">"tipo3"</span>,</p>
-                <p class="code-line-11"><span class="code-tab"></span><span class="string">"Lisa Bellanti"</span></p>
-                <p class="code-line-12">];</p>
+        <div id="footer" class="content comment">
+            Site developed by Carlo Vassallo
+            <a class="comment" href="mailto:dev.vassallocarlo97@gmail.com">
+                <span class="ion-ios-email-outline"></span>
+                vassallocarlo97@gmail.com
             </a>
-            <div class="footer-col footer-author comment">
-                Site developed by Carlo Vassallo
-                <a class="comment" href="mailto:dev.vassallocarlo97@gmail.com">
-                    <span class="ion-ios-email-outline"></span>
-                    vassallocarlo97@gmail.com
-                </a>
-                <a class="comment" href="vassallocarlo.altervista.org">
-                    <span class="ion-ios-world-outline"></span>
-                    vassallocarlo.altervista.org
-                </a>
-            </div>
+            <a class="comment" href="vassallocarlo.altervista.org">
+                <span class="ion-ios-world-outline"></span>
+                vassallocarlo.altervista.org
+            </a>
         </div>
 
         <!--    Scripts    -->

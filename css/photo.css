@@ -1,0 +1,6 @@
+#photo p{
+    background-color: rgb(45, 46, 48);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
