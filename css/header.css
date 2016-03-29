@@ -8,7 +8,7 @@
     text-align: right;
     background-color: rgb(60, 63, 65);
     white-space: nowrap;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header .header-logo{

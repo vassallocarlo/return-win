@@ -2,8 +2,13 @@
     padding: 15px;
 }
 
-#mailus .window-bar .mailus-content #mailus-form .mailus-message{
+#mailus .window-bar .mailus-content #mailus-form #mailus-message{
     display: none;
+}
+
+#mailus .window-bar .mailus-content #mailus-form #mailus-loading{
+    display: none;
+    animation: cursor 1s infinite linear;
 }
 
 

@@ -13,26 +13,53 @@
             <a href="#countdown" class="header-logo">
                 <span class="keyword">return</span> win();<span class="cursor"></span>
             </a>
-            <a href="#team"><span class="keyword">const</span> TEAM</a>
-            <a href="#photo"><span class="keyword">const</span> PHOTO</a>
-            <a href="#video"><span class="keyword">const</span> VIDEO</a>
-            <a href="#findus"><span class="keyword">const</span> FIND_US</a>
-            <a href="#mailus"><span class="keyword">const</span> MAIL_US</a>
+            <a href="#team"><span class="keyword">const</span> TEAM;</a>
+            <a href="#photo"><span class="keyword">const</span> PHOTO;</a>
+            <a href="#video"><span class="keyword">const</span> VIDEO;</a>
+            <a href="#findus"><span class="keyword">const</span> FIND_US;</a>
+            <a href="#mailus"><span class="keyword">const</span> MAIL_US;</a>
         </div>
         <div id="countdown" class="content content-100">
             <h1><span class="keyword">return</span> win();</h1>
             <h3><span class="comment">[root@us]></span> We are coding <span class="bash-cursor"></span></h3>
         </div>
         <div id="team" class="content">
-            <div class="team-component">carlo</div>
-            <div class="team-component">niscosi</div>
-            <div class="team-component">kri</div>
-            <div class="team-component">kuma</div>
-            <div class="team-component">palme</div>
-            <div class="team-component">barberi</div>
-            <div class="team-component">a</div>
-            <div class="team-component">b</div>
-            <div class="team-component team-component-double">proff</div>
+            <div class="team-component" style="background-color: rebeccapurple;">
+                CARLO
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component" style="background-color: RED;">
+                niscosi
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component" style="background-color: BLUE;">
+                kri
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component" style="background-color: GREEN;">
+                kuma
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component" style="background-color: BROWN;">
+                palme
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component" style="background-color: AZURE;">
+                barberi
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component">
+                a
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component">
+                b
+                <img src="asset/img/team-component.png">
+            </div>
+            <div class="team-component team-component-double">
+                proff
+                <img src="asset/img/team-component.png">
+            </div>
         </div>
         <div id="photo" class="content">
             <img src="asset/img/photo.jpg" style="height:100%; width:100%">
@@ -42,9 +69,8 @@
             <img src="asset/img/video.jpg" style="height:100%; width:100%">
             <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
         </div>
-        <div id="findus" class="content content-100">
-            <!-- NOTE: non funziona zio bhe !-->
-            <div id="map"></div>
+        <div id="findus" class="content">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.6539818352485!2d10.12604981571065!3d44.02854443609576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50ed5b401a2e3%3A0xcf58854631a30569!2sIIS+Meucci!5e0!3m2!1sit!2sit!4v1459268796939" frameborder="0" style="border:0" allowfullscreen></iframe>
             <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
         </div>
         <div id="mailus" class="content">
@@ -52,10 +78,12 @@
                 <div class="mailus-content">
                     <h3>Mail us</h3>
                     <form id="mailus-form">
-                        <input placeholder="Your email" type="email">
-                        <input placeholder="Email object" type="text">
-                        <textarea placeholder="Email body"></textarea>
-                        <p class="mailus-message">Mail sended!</p>
+                        <input id="mailus-email" placeholder="Your email" type="email">
+                        <input id="mailus-name" placeholder="Your name" type="text">
+                        <input id="mailus-object" placeholder="Email object" type="text">
+                        <textarea id="mailus-body" placeholder="Email body"></textarea>
+                        <span id="mailus-loading" class="ion-minus-round"></span>
+                        <p id="mailus-message">Mail sended!</p>
                         <input type="submit" value="mail us">
                     </form>
                 </div>
@@ -76,7 +104,5 @@
         <!--    Scripts    -->
         <script src="libs/jquery.min.js"></script>
         <script src="script.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALyUYdstVsPPqXQGSf6QD4JCUSowYKV7Q&callback=initMap"
-                async defer></script>
     </body>
 </html>
