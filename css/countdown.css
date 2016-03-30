@@ -1,9 +1,65 @@
+#countdown h1{
+    margin-top: 20px;
+}
+
 #countdown{
     padding-top: 60px;
     text-align: center;
 }
 
-#countdown h1{
-    margin-top: 20px;
+.countdown{
+    width: 100%;
+    vertical-align: middle;
 }
 
+.countdown div{
+    float: left;
+    width: 33.33%;
+    margin-top: 50px;
+}
+
+.countdown div h3{
+    width: 290.6666666666px;
+    height: 290.6666666666px;
+    line-height: 290.6666666666px;
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    margin: 0px 20px;
+}
+
+.countdown div p{
+    width: 100%;
+    font-size: 25px;
+}
+
+
+@media (max-width: 992px){
+    .countdown div h3{
+        width: 226px;
+        height: 226px;
+        line-height: 226px;
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .countdown div h3{
+        width: 127.33333333333333333333333333333px;
+        height: 127.33333333333333333333333333333px;
+        line-height: 127.33333333333333333333333333333px;
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 442px){
+    .countdown div{
+        width: 100%;
+    }
+    .countdown div h3{
+        width: calc(100% - 120px);
+        height: 110px;
+        line-height: 110px;
+        margin: 0px 60px;
+    }
+}
