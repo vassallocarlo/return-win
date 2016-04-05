@@ -7,18 +7,28 @@ function closeMailmeMessage(){
 function openMailmeMessage(){
     $('#mailus-message').css('display', 'block');
 }
-function countdown(){
-    var t = Date.parse(new Date('10/5/2016')) - Date.parse(new Date());
-    var seconds = Math.floor( (t/1000) % 60 );
-    var minutes = Math.floor( (t/1000/60) % 60 );
-    var hours = Math.floor( t/(1000*60*60) );
-    $('#countdown-hour').html(hours);
-    $('#countdown-minute').html(minutes);
-    $('#countdown-second').html(seconds);
-}
+
 
 $(function(){
-    setInterval(countdown,500);
+    var timer = setInterval(function countdown(){
+        //var t = Date.parse(new Date('2016/05/10 15:00:00')) - Date.parse(new Date());
+        var t = Date.parse(new Date('2016/05/10 15:00:00')) - Date.parse(new Date());
+
+        if(t > 0){        
+            var seconds = Math.floor( (t/1000) % 60 );
+            var minutes = Math.floor( (t/1000/60) % 60 );
+            var hours = Math.floor( t/1000/60/60 );
+            $('#countdown-hour').html(hours);
+            $('#countdown-minute').html(minutes);
+            $('#countdown-second').html(seconds);
+        }else{
+            clearInterval(timer);
+            $('#countdown-hour').html('There');
+            $('#countdown-minute').html('we');
+            $('#countdown-second').html('are!');
+        }
+    },500);
+    
     $('.carousel').css('background-image','url(asset/img/' + imgs[0] + ')');
 
     $('#mailus-form').submit(function(event){
