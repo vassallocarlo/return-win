@@ -249,6 +249,36 @@ input[type="submit"]:hover{
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:window-inactive {background-color: rgb(49,49,49);}
 
+/*  CAROUSEL  */
+.carousel{
+    position: relative;
+    height: 300px;
+    line-height: 300px;
+    vertical-align: middle;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carousel .arrow-left,
+.carousel .arrow-right{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+.carousel .arrow-left:hover,
+.carousel .arrow-right:hover{
+    color: #c2c2c2;
+}
+.carousel .arrow-left{left: 0px;}
+.carousel .arrow-right{right: 0px;}
+
+
+
 /*  TYPOGRAPHY   */
 
 h1{

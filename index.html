@@ -24,64 +24,70 @@
             <h3><span class="comment">[root@us]></span> We are coding <span class="bash-cursor"></span></h3>
             <div class="countdown">
                 <div>
-                    <h3>200</h3>
+                    <h3 id="countdown-hour">200</h3>
                     <p>hours</p>
                 </div>
                 <div>
-                    <h3>45</h3>
+                    <h3 id="countdown-minute">45</h3>
                     <p>minutes</p>
                 </div>
                 <div>
-                    <h3>37</h3>
+                    <h3 id="countdown-second">37</h3>
                     <p>seconds</p>
                 </div>
             </div>
+            <a href="#team" class="ion-chevron-down"></a>
         </div>
         <div id="team" class="content">
-            <div class="team-component" style="background-color: rebeccapurple;">
-                CARLO
-                <img src="asset/img/team-component.png">
+            <a class="team-component" target="_blank" href="http://vassallocarlo.altervista.org">
+                VASSALLO
+                <img src="asset/img/carlo.jpg">
+            </a>
+            <div class="team-component">
+                NISCOSI
+                <img src="asset/img/niscosi.jpg">
             </div>
-            <div class="team-component" style="background-color: RED;">
-                niscosi
-                <img src="asset/img/team-component.png">
-            </div>
-            <div class="team-component" style="background-color: BLUE;">
-                kri
-                <img src="asset/img/team-component.png">
-            </div>
-            <div class="team-component" style="background-color: GREEN;">
-                kuma
-                <img src="asset/img/team-component.png">
-            </div>
-            <div class="team-component" style="background-color: BROWN;">
-                palme
-                <img src="asset/img/team-component.png">
-            </div>
-            <div class="team-component" style="background-color: AZURE;">
-                barberi
-                <img src="asset/img/team-component.png">
+            <a class="team-component" target="_blank" href="http://kristiannotari.altervista.org">
+                NOTARI
+                <img src="asset/img/kri.jpg">
+            </a>
+            <div class="team-component">
+                KUMANAKU
+                <img src="asset/img/kuma.jpg">
             </div>
             <div class="team-component">
-                a
-                <img src="asset/img/team-component.png">
+                PALMERINI
+                <img src="asset/img/palme.jpg">
             </div>
             <div class="team-component">
-                b
-                <img src="asset/img/team-component.png">
+                BARBERI
+                <img src="asset/img/barberi.jpg">
+            </div>
+            <div class="team-component">
+                AMATI
+                <img src="asset/img/thomas.jpg">
+            </div>
+            <div class="team-component">
+                LORENZI
+                <img src="asset/img/lorenzi.jpg">
             </div>
             <div class="team-component team-component-double">
-                proff
+                PROFF. BELLANTI
                 <img src="asset/img/team-component.png">
             </div>
+            <p class="code-line-1">team.<span class="properties">getInfo</span>();</p>
         </div>
         <div id="photo" class="content">
-            <img src="asset/img/photo.jpg" style="height:100%; width:100%">
-            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
+            <div class="carousel">
+                <span id="photo-prev" class="arrow-left ion-chevron-left"></span>
+                <span id="photo-next" class="arrow-right ion-chevron-right"></span>
+<!--                <img id="photo-img" src="asset/img/photo(1).jpg">-->
+            </div>
+            <p class="code-line-1">memories.<span class="properties">getImgs</span>(<span class="string">'*'</span>);</p>
         </div>
         <div id="video" class="content">
-            <img src="asset/img/video.jpg" style="height:100%; width:100%">
-            <p class="code-line-1">world.<span class="properties">find</span>(<span class="string">'return win NAO team'</span>);</p>
+            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=croix89" width="480" height="400"></iframe>     
+            <p class="code-line-1">memories.<span class="properties">getVideos</span>(<span class="string">'*'</span>);</p>
         </div>
         <div id="findus" class="content">
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2868.6539818352485!2d10.12604981571065!3d44.02854443609576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50ed5b401a2e3%3A0xcf58854631a30569!2sIIS+Meucci!5e0!3m2!1sit!2sit!4v1459268796939" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -109,9 +115,13 @@
                 <span class="ion-ios-email-outline"></span>
                 vassallocarlo97@gmail.com
             </a>
-            <a class="comment" href="vassallocarlo.altervista.org">
+            <a class="comment" href="http://vassallocarlo.altervista.org">
                 <span class="ion-ios-world-outline"></span>
                 vassallocarlo.altervista.org
+            </a><br>
+            This site is opensource and freely available at
+            <a class="comment" href="http://github.com/vassallocarlo/return-win">
+                github.com/vassallocarlo/return-win
             </a>
         </div>
 

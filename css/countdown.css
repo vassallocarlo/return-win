@@ -3,6 +3,7 @@
 }
 
 #countdown{
+    position: relative;
     padding-top: 60px;
     text-align: center;
 }
@@ -26,6 +27,14 @@
     color: black;
     font-size: 50px;
     margin: 0px 20px;
+}
+
+#countdown .ion-chevron-down{
+    font-size: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
 }
 
 .countdown div p{
