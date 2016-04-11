@@ -1,8 +1,31 @@
-var imgs = ['acaso.jpg','acasu.jpg','kri.jpg','niscosi.jpg','nao-challene.jpg'];
+var imgs = [
+    'lab1.jpg',
+    'lab2.jpg',
+    'lab3.jpg',
+    'lab4.jpg',
+    'lab5.jpg',
+    'lab6.jpg',
+    'lab7.jpg',
+    'lab8.jpg',
+    'lab9.jpg',
+    'lab10.jpg',
+    'lab11.jpg',
+    'lab12.jpg',
+    'lab13.jpg',
+    'lab14.jpg',
+    'lab15.jpg',
+    'lab16.jpg',
+    'lab17.jpg',
+    'lab18.jpg',
+    'lab19.jpg',
+    'lab20.jpg',
+    'lab21.jpg',
+    'lab22.jpg'
+];
 var current_img = 0;
 
 function closeMailmeMessage(){
-    $('.mailus-message').css('display', 'none');
+    $('#mailus-message').css('display', 'none');
 }
 function openMailmeMessage(){
     $('#mailus-message').css('display', 'block');
@@ -11,7 +34,6 @@ function openMailmeMessage(){
 
 $(function(){
     var timer = setInterval(function countdown(){
-        //var t = Date.parse(new Date('2016/05/10 15:00:00')) - Date.parse(new Date());
         var t = Date.parse(new Date('2016/05/10 15:00:00')) - Date.parse(new Date());
 
         if(t > 0){        
@@ -75,7 +97,7 @@ $(function(){
     $('#photo-prev').on('click', function(){
         if(current_img > 0) current_img--;
         else current_img = imgs.length - 1;
-
+        
         $('.carousel').css('background-image','url(asset/img/' + imgs[current_img] + ')');
     });
 

@@ -24,6 +24,7 @@
 
 #team .team-component-double{
     width: 396.8px;
+    line-height: 99.2px;
 }
 
 #team p.code-line-1{
@@ -42,6 +43,7 @@
     }
     #team .team-component-double{
         width: 768px;
+        line-height: 96px;
     }
 }
 
@@ -53,6 +55,7 @@
     }
     #team .team-component-double{
         width: 147.33333333333333333333333333333px;
+        line-height: 73.6666666px;
     }
 }
 
@@ -64,6 +67,7 @@
     }
     #team .team-component-double{
         width: 100%;
+        line-height: 55px;
     }
 }
 
