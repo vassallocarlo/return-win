@@ -203,6 +203,7 @@ input[type="text"]:hover{
     color: inherit;
     font: inherit;
     border-bottom: 1px solid white;
+    border-radius: 0px;
     width: 100%;
     height: 30px;
     margin-bottom: 10px;

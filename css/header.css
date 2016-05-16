@@ -9,6 +9,7 @@
     background-color: rgb(60, 63, 65);
     white-space: nowrap;
     z-index: 3;
+    -webkit-overflow-scrolling: touch;
 }
 
 .header .header-logo{

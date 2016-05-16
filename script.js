@@ -20,7 +20,18 @@ var imgs = [
     'lab19.jpg',
     'lab20.jpg',
     'lab21.jpg',
-    'lab22.jpg'
+    'lab22.jpg',
+    'firenze1.jpg',
+    'firenze2.jpg',
+    'firenze3.jpg',
+    'firenze4.jpg',
+    'firenze5.jpg',
+    'firenze6.jpg',
+    'firenze7.jpg',
+    'firenze8.jpg',
+    'firenze9.jpg',
+    'firenze10.jpg',
+    'firenze12.jpg'
 ];
 var current_img = 0;
 
@@ -34,7 +45,7 @@ function openMailmeMessage(){
 
 $(function(){
     var timer = setInterval(function countdown(){
-        var t = Date.parse(new Date('2016/05/10 15:00:00')) - Date.parse(new Date());
+        var t = Date.parse(new Date('2016/05/7 15:00:00')) - Date.parse(new Date());
 
         if(t > 0){        
             var seconds = Math.floor( (t/1000) % 60 );
@@ -58,8 +69,8 @@ $(function(){
         closeMailmeMessage();
         $('#mailus-loading').css('display', 'block');
 
-        if($('#mailus-form input[type=email]').val(),
-           $('#mailus-form input[type=text]').val(),
+        if($('#mailus-form input[type=email]').val() |
+           $('#mailus-form input[type=text]').val() |
            $('#mailus-form textarea').val()){
 
             $.ajax({
