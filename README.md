@@ -3,7 +3,7 @@ Web site for NAO challenge returnWin() team.
 
 ### Creditis ###
 Site developed by Carlo Vassallo
-website: [vassallocarlo.altervista.org](http://vassallocarlo.altervista.org)
+website: [Carlo Vassallo](https://www.linkedin.com/in/carlovassallo)
 email: vassallocarlo97@gmail.com
 
 ### License ###
